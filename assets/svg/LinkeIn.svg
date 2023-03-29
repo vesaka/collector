@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="86.063" height="86.063" viewBox="0 0 86.063 86.063">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.626" gradientTransform="translate(0 0.02) scale(1 0.961)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#00865b"/>
+      <stop offset="1" stop-color="#00432e"/>
+    </radialGradient>
+    <filter id="Path_20546" x="0" y="0" width="86.063" height="86.063" filterUnits="userSpaceOnUse">
+      <feOffset dy="4" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feFlood flood-opacity="0.251" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="LinkeIn" transform="translate(0.001)">
+    <g id="Button-bg-02" transform="translate(-0.001)">
+      <g data-type="innerShadowGroup">
+        <path id="Path_20546-2" data-name="Path 20546" d="M15.368,0H70.694A15.368,15.368,0,0,1,86.063,15.368V70.694A15.368,15.368,0,0,1,70.694,86.063H15.368A15.368,15.368,0,0,1,0,70.694V15.368A15.368,15.368,0,0,1,15.368,0Z" fill="url(#radial-gradient)"/>
+        <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Path_20546)">
+          <path id="Path_20546-3" data-name="Path 20546" d="M15.368,0H70.694A15.368,15.368,0,0,1,86.063,15.368V70.694A15.368,15.368,0,0,1,70.694,86.063H15.368A15.368,15.368,0,0,1,0,70.694V15.368A15.368,15.368,0,0,1,15.368,0Z" transform="translate(0)" fill="#fff"/>
+        </g>
+      </g>
+      <path id="Path_19771_-_Outline" data-name="Path 19771 - Outline" d="M15.368,3.074A12.295,12.295,0,0,0,3.074,15.368V70.694A12.295,12.295,0,0,0,15.368,82.989H70.694A12.295,12.295,0,0,0,82.989,70.694V15.368A12.295,12.295,0,0,0,70.694,3.074H15.368m0-3.074H70.694A15.368,15.368,0,0,1,86.063,15.368V70.694A15.368,15.368,0,0,1,70.694,86.063H15.368A15.368,15.368,0,0,1,0,70.694V15.368A15.368,15.368,0,0,1,15.368,0Z" fill="#6bbfa3"/>
+      <path id="Icon_awesome-linkedin-in" data-name="Icon awesome-linkedin-in" d="M7.819,34.929H.577V11.609H7.819ZM4.194,8.428A4.214,4.214,0,1,1,8.388,4.195,4.229,4.229,0,0,1,4.194,8.428Zm30.728,26.5H27.7V23.577c0-2.705-.055-6.175-3.765-6.175-3.765,0-4.342,2.939-4.342,5.98V34.929H12.355V11.609H19.3V14.79h.1a7.609,7.609,0,0,1,6.852-3.766c7.329,0,8.676,4.826,8.676,11.095v12.81Z" transform="translate(25.567 25.566)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

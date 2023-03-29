@@ -1,0 +1,96 @@
+{
+    "title": "Recycle Time",
+    "weldone": "Weldone!",
+    "intro": {
+        "wlecome": "",
+        "register": "Register",
+        "as-guest": "Play as guest",
+        "with-account": "Already have an account?",
+        "play": "Let's play",
+        "leaderboard": "Leaderboard"
+    },
+    "tutorial": {
+        "desktop": "Drag objects with the mouse and drop them in the appropriate bin.",
+        "mobile": "Drag objects and drop them in the appropriate bin.",
+        "enjoy": "To enjoy the game",
+        "rotate": "Please rotate you device"
+    },
+    "login": {
+        "username": {
+            "placeholder": "Enter your username"
+        },
+        "password": {
+            "placeholder": "Enter your password"
+        },
+        "forgot-password": "Forgot your password?"
+    },
+    "register": {
+        "username": {
+            "placeholder": "Enter your username"
+        },
+        "password": {
+            "placeholder": "Enter your password"
+        },
+        "confirm-password": {
+            "placeholder": "Confirm your password"
+        },
+        "accept": "By playing this game I accept EAD's",
+        "terms": "terms and conditions",
+        "continue": "Continue as a ",
+        "guest": "guest",
+        "or": "or",
+        "login": "login",
+        "check-email": "Please check you email to confirm your registration"
+    },
+    "forgot-password": {
+        "login": "Login",
+        "email": "Enter your email",
+        "onSucess": "Please check your email!"
+    },
+    "reset-password": {
+        "password": {
+            "placeholder": "Enter your new password"
+        },
+        "confirm-password": {
+            "placeholder": "Confirm your new password"
+        },
+        "onSucess": "Your password was changed!"
+    },
+    "leaderboard": {
+        "headers": {
+            "rank": "Rank",
+            "name": "Player",
+            "score": "Score"
+        },
+        "play-again": "Play again"
+    },
+    "screen": {
+        "level": "You completed level {level} in {time} seconds. Your current score is {score}",
+        "final": "You scored {score} points in {time} seconds! \n Congratulations!"
+    },
+    "end": {
+        "weldone": "Welldone!",
+        "yourScore": "Your score is ",
+        "points": "points!",
+        "leaderboard": "Leaderboard",
+        "retry": "Play again",
+        "home": "Home",
+        "share": "Socials"
+    },
+    "level": {
+        "label": "Level: ",
+        "view": "Level: {level}",
+        "end": {
+            "weldone": "Welldone!",
+            "finished": "You finished level ",
+            "in": " in ",
+            "seconds": " seconds!"
+        }
+    },
+    "buttons": {
+        "play": "Play",
+        "back": "Back",
+        "to-home": "Back to home",
+        "socials": "Visit our social pages"
+    }
+}

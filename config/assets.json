@@ -1,0 +1,30 @@
+{
+    "font": [
+        "fonts/LuckiestGuy.ttf"
+    ],
+    "locale": {
+        "en": "i18n/en.json"
+    },
+    "background": [
+        "textures/bg/levels-2.json"
+    ],
+    "menu": "textures/bg/bg-menu.png",
+    "basket": "textures/baskets/baskets-2.json",
+    "button": "textures/ui/buttons-4.json",
+    "label": "textures/ui/labels-4.json",
+    "title": "textures/ui/titles-2.json",
+    "misc": "textures/ui/misc.json",
+    "social": "textures/ui/socials.json",
+    "waste": {
+        "plastic": "textures/wastes/plastic.json",
+        "can": "textures/wastes/cans.json",
+        "paper": "textures/wastes/paper.json",
+        "glass": "textures/wastes/glass.json"
+    },
+    "audio": {
+        "correct": "media/v2/correct.m4a",
+        "incorrect": "media/v2/incorrect.m4a",
+        "theme": "media/v2/theme.m4a"
+    }
+
+}

@@ -1,0 +1,677 @@
+{
+    "debug": true,
+    "assetsBaseUrl": "/src/game/collector/",
+    "locale": "en",
+    "defaultLocale": "en",
+    "scale": 32,
+    "world": {
+        "offset": 10,
+        "size": {
+            "width": 1280,
+            "height": 800
+        }
+    },
+    "app": {
+        "backgroundColor": "#331100",
+        "antialias": true,
+        "autoResize": true
+    },
+    "renderer": {
+        "autoResize": true
+    },
+    "view": {
+        "style": {
+            "display": "flex",
+            "top": 0,
+            "left": 0,
+            "right": 0,
+            "bottom": 0,
+            "overflow": "hidden"
+        }
+    },
+    "stage": {
+        "interactive": true,
+        "scale": {
+            "x": 1,
+            "y": 1
+        }
+    },
+    "game": {
+        "width": 1280,
+        "height": 800,
+        "resetTime": 1,
+        "levels": { 
+            "max": 3,
+            "lessTime": 10,
+            "moreWaste": 5,
+            "increasePenalty": 15,
+            "increasePoints": 25
+        }
+    },
+    "fonts": {
+        "main": {
+            "family": "LuckiestGuy",
+            "weight": 400
+        }
+    },
+    "ui": {
+        "style": {
+            "fontFamily": "LuckiestGuy",
+            "fontSize": 44,
+            "fill": "#FFFFFF",
+            "dropShadow": true,
+            "dropShadowAlpha": 0.5,
+            "dropShadowAngle": 1.57,
+            "dropShadowBlur": 0.3,
+            "dropShadowDistance": 2,
+            "letterSpacing": 1.5,
+            "zIndex": 30
+        },
+        "screens": {
+            "def": {
+                "x": 0.5,
+                "y": 0.23,
+                "width": 0.5,
+                "height": 0.35,
+                "scale": {
+                    "x": 1,
+                    "y": 1
+                },
+                "style": {},
+                "menu": {
+                    "x": 0.5,
+                    "y": 0.57,
+                    "width": 0.67,
+                    "height": 0.4,
+                    "visible": true,
+                    "scale": {
+                        "x": 0.45,
+                        "y": 0.45
+                    }
+                }
+            },
+            "intro": {
+                "title": {
+                    "x": 0.5,
+                    "y": 0.33,
+                    "width": 0.5,
+                    "height": 0.2,
+                    "scale": {
+                        "x": 0.75,
+                        "y": 0.75
+                    }
+                },
+                "result": {
+                    "x": 0.05,
+                    "y": 0.63,
+                    "width": 0.95,
+                    "height": 0.5,
+                    "view": [
+                        "screen.final",
+                        "Recycle Time"
+                    ],
+                    "style": {
+                        "align": "center",
+                        "fontSize": 64
+                    }
+                },
+                "actions": {
+                    "play": {
+                        "x": 0.58,
+                        "title": "intro.as-guest",
+                        "scale": 0.75,
+                        "style": {
+                            "fontSize": 20
+                        }
+                    },
+                    "register": {
+                        "x": 0.42,
+                        "y": 0.6,
+                        "title": "intro.register",
+                        "scaleUpOnHover": true,
+                        "scale": 0.75,
+                        "style": {
+                            "fontSize": 20
+                        }
+                    },
+                    "leaderboard": {
+                        "x": 0.42,
+                        "y": 0.6,
+                        "title": "intro.leaderboard",
+                        "scaleUpOnHover": true,
+                        "scale": 0.75,
+                        "visible": true,
+                        "style": {
+                            "fontSize": 20
+                        }
+                    }
+                }
+            },
+            "play": {
+                "def": {
+                    "height": 0.1,
+                    "width": 0.15
+                },
+                "parts": {
+                    "levelText": {
+                        "layer": "progress",
+                        "style": {}
+                    },
+                    "currentLevel": {
+                        "layer": "progress"
+                    },
+                    "correct": {
+                        "layer": "progress",
+                        "style": {
+                            "fill": "#33FF33"
+                        }
+                    },
+                    "correctCount": {
+                        "layer": "progress"
+                    },
+                    "incorrect": {
+                        "layer": "progress",
+                        "style": {
+                            "fill": "#FF3333"
+                        }
+                    },
+                    "incorrectCount": {
+                        "layer": "progress"
+                    }
+                },
+                "actions": {
+                    "home": {
+                        "x": 0.76,
+                        "y": 60,
+                        "width": 0.08,
+                        "height": 0.1,
+                        "scaleOn": 0.2,
+                        "visible": true
+                    }
+                }
+            },
+            "level": {
+                "def": {},
+                "title": {
+                    "x": 0.5,
+                    "y": 0.33,
+                    "width": 0.5,
+                    "height": 0.2,
+                    "scale": {
+                        "x": 0.95,
+                        "y": 0.95
+                    }
+                },
+                "lines": [
+                    {
+                        "top": 0.46,
+                        "align": "center",
+                        "space": 10,
+                        "texts": ["finished", "levelText", "currentLevel"]
+                    },
+                    {
+                        "top": 0.52,
+                        "align": "center",
+                        "space": 10,
+                        "texts": ["in", "time", "seconds"]
+                    }
+                ],
+                "parts": {
+                    "finished": {
+                        "view": ["level.end.completed", "You completed "]
+                    },
+                    "levelText": {
+                        "view": ["level.end.levelText", "level "],
+                        "style": {
+                            "fill": "#f1b971"
+                        }
+                    },
+                    "currentLevel": {
+                        "style": {
+                            "fill": "#f1b971"
+                        }
+                    },
+                    "in": {
+                        "view": ["level.end.in", "in "]
+                    },
+                    "time": {
+                        "style": {
+                            "fill": "#f1b971"
+                        }
+                    },
+                    "seconds": {
+                        "view": ["level.end.seconds", " seconds"],
+                        "style": {
+                            "fill": "#f1b971"
+                        }
+                    }
+                }
+            },
+            "end": {
+                "def": {
+                    "x": 0.5,
+                    "y": 0.23,
+                    "width": 0.5,
+                    "height": 0.35,
+                    "style": {
+                        "align": "center",
+                        "fontSize": 72
+                    }
+                },
+                "title": {
+                    "x": 0.5,
+                    "y": 0.33,
+                    "width": 0.5,
+                    "height": 0.2,
+                    "scale": {
+                        "x": 0.85,
+                        "y": 0.85
+                    }
+                },
+                "tryAgain": {
+                    "x": 0.5,
+                    "y": 0.33,
+                    "width": 0.5,
+                    "height": 0.2,
+                    "visible": false,
+                    "scale": {
+                        "x": 0.85,
+                        "y": 0.85
+                    }
+                },
+                "lines": [
+                    {
+                        "top": 0.43,
+                        "align": "center",
+                        "space": 10,
+                        "texts": [
+                            "yourScore",
+                            "score",
+                            "points"
+                        ]
+                    }
+                ],
+                "parts": {
+                    "yourScore": {
+                        "view": [
+                            "end.yourScore",
+                            "Your score is "
+                        ]
+                    },
+                    "score": {
+                        "offset": {
+                            "x": 10
+                        },
+                        "style": {
+                            "fill": "#f1b971"
+                        }
+                    },
+                    "points": {
+                        "view": [
+                            "end.points",
+                            "points"
+                        ]
+                    }
+                },
+                "actions": {
+                    "leaderboard": {
+                        "x": 0.32,
+                        "y": 0.65,
+                        "width": 0.1,
+                        "height": 0.1,
+                        "visible": true,
+                        "zIndex": 10,
+                        "title": "end.leaderboard",
+                        "titleTop": 25,
+                        "style": {
+                            "fontSize": 20
+                        }
+                    },
+                    "retry": {
+                        "x": 0.44,
+                        "y": 0.65,
+                        "width": 0.1,
+                        "height": 0.1,
+                        "visible": true,
+                        "zIndex": 10,
+                        "title": "end.retry",
+                        "titleTop": 25,
+                        "style": {
+                            "fontSize": 20
+                        }
+                    },
+                    "home": {
+                        "x": 0.56,
+                        "y": 0.65,
+                        "width": 0.1,
+                        "height": 0.1,
+                        "visible": true,
+                        "local": true,
+                        "scale": 1,
+                        "zIndex": 10,
+                        "title": "end.home",
+                        "titleTop": 25,
+                        "style": {
+                            "fontSize": 20
+                        }
+                    },
+                    "share": {
+                        "x": 0.68,
+                        "y": 0.65,
+                        "width": 0.1,
+                        "height": 0.1,
+                        "visible": true,
+                        "zIndex": 10,
+                        "title": "end.share",
+                        "titleTop": 25,
+                        "style": {
+                            "fontSize": 20
+                        }
+                    }
+                }
+            },
+            "info": {}
+        },
+        "environment": {
+            "nsprites": 2,
+            "data": {
+                "trimed": true,
+                "rotated": false,
+                "meta": {
+                    "scale": 1
+                }
+            },
+            "size": {
+                "width": 1325,
+                "height": 1024
+            }
+        },
+        "progress": {
+            "background": {
+                "fill": "#001133"
+            },
+            "position": {
+                "y": 300
+            },
+            "size": {
+                "width": 400,
+                "height": 30,
+                "radius": 50,
+                "border": 5
+            },
+            "outer": {
+                "fill": "#553133"
+            },
+            "inner": {
+                "fill": "#001133"
+            }
+        },
+        "labels": {
+            "def": {
+                "x": 0.2,
+                "y": 0.02,
+                "width": 0.15,
+                "height": 0.1,
+                "visible": false,
+                "offsetScaleX": 1,
+                "position": {
+                    "x": 0,
+                    "y": -5
+                },
+                "style": {
+                    "fontSize": 54
+                }
+            },
+            "timer": {
+                "x": 0.02,
+                "max": 90,
+                "min": 0,
+                "reduceByLevel": 10,
+                "increaseByLevel": 10,
+                "position": {
+                    "x": 25,
+                    "y": -6
+                },
+                "style": {
+                    "fill": "#f39200"
+                    
+                }
+            },
+            "score": {
+                "x": 0.02,
+                "y": 0.2,
+                "value": 0,
+                "offsetScaleX": 0,
+                "position": {
+                    "x": 5
+                },
+                "style": {
+                    "align": "right"
+                }
+            },
+            "level": {
+                "x": 0.02,
+                "y": 0.11,
+                "max": 5,
+                "offsetScaleX": 0.5,
+                "position": {
+                    "y": -5
+                },
+                "style": {
+                    "fill": "#f39200",
+                    "fontSize": 28
+                }
+            },
+            "moves": {
+                "x": 0.5,
+                "y": 0.17,
+                "width": 0.14,
+                "height": 0.09,
+                "offset": 30,
+                "style": {
+                    "fill": "#005081"
+                },
+                "def": {
+                    "x": 0.25,
+                    "y": 0.21,
+                    "width": 0.2,
+                    "direction": 1 
+                },
+                "types": {
+                    "correct": {
+                        "direction": -1 
+                    },
+                    "incorrect": {
+                        "x": 0.36
+                    }
+                }
+            },
+            "progress": {
+                "x": 0.2,
+                "y": 0.9,
+                "width": 300,
+                "tint": "#662211",
+                "style": {}
+            }
+        },
+        "buttons": {
+            "def": {
+                "x": 0.5,
+                "y": 0.5,
+                "width": 0.2,
+                "height": 0.2,
+                "scaleOn": 0.2,
+                "visible": false,
+                "add": false,
+                "scale": 1,
+                "style": {}
+            },
+            "topRight": {
+                "x": 0.92,
+                "y": 60,
+                "width": 0.08,
+                "height": 0.1,
+                "scale": 0.75,
+                "scaleOn": 0.2,
+                "visible": false,
+                "style": {
+                    "fill": "white",
+                    "fontSize": 24
+                }
+            },
+            "play": {
+                "scaleOn": 0.2,
+                "visible": true,
+                "x": 0.55,
+                "y": 0.6
+            },
+            "register": {
+                "scaleOn": 0.2,
+                "visible": true,
+                "x": 0.45,
+                "y": 0.6
+            },
+            "home": {
+                "x": 0.92,
+                "y": 0.9,
+                "preset": "topRight",
+                "visible": false
+            },
+            "level": {
+                "y": 0.7,
+                "width": 0.08,
+                "height": 0.1,
+                "scaleOn": 0.2,
+                "visible": true
+            },
+            "fullscreen": {
+                "preset": "topRight",
+                "visible": true,
+                "add": true
+            },
+            "smallscreen": {
+                "preset": "topRight",
+                "visible": false,
+                "add": true
+            },
+            "sound_on": {
+                "x": 0.84,
+                "preset": "topRight",
+                "add": true
+            },
+            "sound_off": {
+                "x": 0.84,
+                "preset": "topRight",
+                "add": true
+            },
+            "retry": {}
+        },
+        "socials": {
+            "title": {
+                "position": {
+                    "x": 0.5,
+                    "y": 0.87
+                }
+            },
+            "def": {
+                "offset": {
+                    "x": 5,
+                    "y": 5
+                }
+            },
+            "items": {
+                "fb": {
+                    "link": "https://www.facebook.com/EnvironmentAbuDhabi/"
+                },
+                "tw": {
+                    "link": "https://twitter.com/EADTweets"
+                },
+                "in": {
+                    "link": "https://www.linkedin.com/company/environment-agency-abu-dhabi/"
+                },
+                "ig": {
+                    "link": "https://www.instagram.com/environmentabudhabi/?hl=en"
+                }
+            },
+            "style": {
+                "fontSize": 20,
+                "align": "center"
+            }
+            
+        }
+    },
+    "media": {
+        "def": {
+            "autoPlay": false,
+            "isPlaying": false,
+            "singleInstance": true,
+            "volume": 0.2
+        },
+        "correct": {
+        },
+        "incorrect": {
+            "volume": 0.5
+        },
+        "theme": {
+            "loop": true
+        }
+    },
+    "grid": {
+        "rows": 12,
+        "columns": 10,
+        "offset": {
+            "x": 20,
+            "y": 90
+        },
+        "placement": {
+            "x": [
+                0.2,
+                0.8
+            ],
+            "y": [
+                0.2,
+                0.8
+            ]
+        }
+    },
+    "models": {
+        "basket": {
+            "yOffset": 0.4,
+            "def": {
+                "offset": 50,
+                "activeScale": 1.2,
+                "shakeDistance": 20,
+                "zIndex": 10,
+                "size": {
+                    "width": 115,
+                    "height": 173
+                }
+            }
+        },
+        "wastes": {
+            "activeCount": 15,
+            "inreaseByLevel": 5,
+            "debug": false,
+            "def": {
+                "score": 25,
+                "penalty": 5,
+                "count": [
+                    1,
+                    3
+                ],
+                "list": [
+                ],
+                "odd": 0.5,
+                "scaling": 0.1,
+                "zIndex": 20,
+                "activeZIndex": 25
+            },
+            "types": {
+                "glass": {},
+                "cans": {},
+                "plastic": {},
+                "paper": {}
+            }
+        }
+    }
+}

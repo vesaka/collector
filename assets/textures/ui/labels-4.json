@@ -1,0 +1,111 @@
+{
+  "frames": {
+    "ui-score": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 426,
+        "h": 166
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 7,
+        "y": 7,
+        "w": 426,
+        "h": 166
+      },
+      "sourceSize": {
+        "w": 440,
+        "h": 180
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ui-timer": {
+      "frame": {
+        "x": 0,
+        "y": 166,
+        "w": 356,
+        "h": 166
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 7,
+        "y": 7,
+        "w": 356,
+        "h": 166
+      },
+      "sourceSize": {
+        "w": 370,
+        "h": 180
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ui-moves": {
+      "frame": {
+        "x": 0,
+        "y": 332,
+        "w": 215,
+        "h": 80
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 215,
+        "h": 80
+      },
+      "sourceSize": {
+        "w": 215,
+        "h": 80
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ui-level": {
+      "frame": {
+        "x": 215,
+        "y": 332,
+        "w": 177,
+        "h": 82
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 4,
+        "y": 4,
+        "w": 177,
+        "h": 82
+      },
+      "sourceSize": {
+        "w": 185,
+        "h": 90
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  "meta": {
+    "app": "http://free-tex-packer.com",
+    "version": "0.6.7",
+    "image": "labels-4.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 426,
+      "h": 414
+    },
+    "scale": 1
+  }
+}

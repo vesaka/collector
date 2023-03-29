@@ -1,0 +1,135 @@
+{
+  "frames": {
+    "cans/cans-3.png": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 117,
+        "h": 264
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 1,
+        "y": 0,
+        "w": 117,
+        "h": 264
+      },
+      "sourceSize": {
+        "w": 118,
+        "h": 264
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "cans/cans-1.png": {
+      "frame": {
+        "x": 0,
+        "y": 264,
+        "w": 120,
+        "h": 250
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 2,
+        "y": 0,
+        "w": 120,
+        "h": 250
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 252
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "cans/cans-2.png": {
+      "frame": {
+        "x": 117,
+        "y": 0,
+        "w": 115,
+        "h": 238
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 1,
+        "y": 0,
+        "w": 115,
+        "h": 238
+      },
+      "sourceSize": {
+        "w": 118,
+        "h": 240
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "cans/cans-5.png": {
+      "frame": {
+        "x": 0,
+        "y": 514,
+        "w": 166,
+        "h": 224
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 166,
+        "h": 224
+      },
+      "sourceSize": {
+        "w": 166,
+        "h": 224
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "cans/cans-4.png": {
+      "frame": {
+        "x": 120,
+        "y": 238,
+        "w": 204,
+        "h": 117
+      },
+      "rotated": true,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 204,
+        "h": 117
+      },
+      "sourceSize": {
+        "w": 204,
+        "h": 117
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  "meta": {
+    "app": "http://free-tex-packer.com",
+    "version": "0.6.7",
+    "image": "cans-1.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 237,
+      "h": 738
+    },
+    "scale": 1
+  }
+}

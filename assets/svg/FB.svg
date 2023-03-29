@@ -1,0 +1,26 @@
+<svg id="FB" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="86.063" height="86.063" viewBox="0 0 86.063 86.063">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.626" gradientTransform="translate(0 0.02) scale(1 0.961)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#00865b"/>
+      <stop offset="1" stop-color="#00432e"/>
+    </radialGradient>
+    <filter id="Path_20546" x="0" y="0" width="86.063" height="86.063" filterUnits="userSpaceOnUse">
+      <feOffset dy="4" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feFlood flood-opacity="0.251" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Button-bg-02">
+    <g data-type="innerShadowGroup">
+      <path id="Path_20546-2" data-name="Path 20546" d="M15.368,0H70.694A15.368,15.368,0,0,1,86.063,15.368V70.694A15.368,15.368,0,0,1,70.694,86.063H15.368A15.368,15.368,0,0,1,0,70.694V15.368A15.368,15.368,0,0,1,15.368,0Z" fill="url(#radial-gradient)"/>
+      <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Path_20546)">
+        <path id="Path_20546-3" data-name="Path 20546" d="M15.368,0H70.694A15.368,15.368,0,0,1,86.063,15.368V70.694A15.368,15.368,0,0,1,70.694,86.063H15.368A15.368,15.368,0,0,1,0,70.694V15.368A15.368,15.368,0,0,1,15.368,0Z" fill="#fff"/>
+      </g>
+    </g>
+    <path id="Path_19771_-_Outline" data-name="Path 19771 - Outline" d="M15.368,3.074A12.295,12.295,0,0,0,3.074,15.368V70.694A12.295,12.295,0,0,0,15.368,82.989H70.694A12.295,12.295,0,0,0,82.989,70.694V15.368A12.295,12.295,0,0,0,70.694,3.074H15.368m0-3.074H70.694A15.368,15.368,0,0,1,86.063,15.368V70.694A15.368,15.368,0,0,1,70.694,86.063H15.368A15.368,15.368,0,0,1,0,70.694V15.368A15.368,15.368,0,0,1,15.368,0Z" fill="#6bbfa3"/>
+    <path id="Icon_awesome-facebook-f" data-name="Icon awesome-facebook-f" d="M21.34,22.176l1.095-7.135H15.589v-4.63c0-1.952.956-3.855,4.022-3.855h3.112V.482A37.953,37.953,0,0,0,17.2,0C11.561,0,7.876,3.417,7.876,9.6v5.438H1.609v7.135H7.876V39.423h7.713V22.176Z" transform="translate(30.864 23.32)" fill="#fff"/>
+  </g>
+</svg>

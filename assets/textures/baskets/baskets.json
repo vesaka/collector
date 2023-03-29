@@ -1,0 +1,111 @@
+{
+  "frames": {
+    "cans.png": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 335,
+        "h": 444
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 335,
+        "h": 444
+      },
+      "sourceSize": {
+        "w": 335,
+        "h": 444
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "glass.png": {
+      "frame": {
+        "x": 0,
+        "y": 444,
+        "w": 335,
+        "h": 444
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 335,
+        "h": 444
+      },
+      "sourceSize": {
+        "w": 335,
+        "h": 444
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "paper.png": {
+      "frame": {
+        "x": 0,
+        "y": 888,
+        "w": 335,
+        "h": 444
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 335,
+        "h": 444
+      },
+      "sourceSize": {
+        "w": 335,
+        "h": 444
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "plastic.png": {
+      "frame": {
+        "x": 0,
+        "y": 1332,
+        "w": 335,
+        "h": 444
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 335,
+        "h": 444
+      },
+      "sourceSize": {
+        "w": 335,
+        "h": 444
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  "meta": {
+    "app": "http://free-tex-packer.com",
+    "version": "0.6.7",
+    "image": "baskets.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 335,
+      "h": 1776
+    },
+    "scale": 1
+  }
+}

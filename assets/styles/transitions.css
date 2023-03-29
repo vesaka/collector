@@ -1,0 +1,201 @@
+/* fade animation */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.scale-in-enter-from,
+.scale-in-leave-to{
+   transform: scale(0.5);
+   opacity: 0;
+}
+
+.scale-in-enter-active,
+.scale-in-leave-active {
+    transition:  transform 0.5s, opacity 0.2s ;
+}
+
+.shrink-enter,
+.shrink-leave-to {
+  transform: scale(1.12);
+  opacity: 0;
+}
+
+.shrink-enter-active,
+.shrink-leave-active {
+  transition: transform 0.5s, opacity 0.3s;
+}
+
+.room-bottom-enter-active {
+    -webkit-animation: rotateRoomBottomIn .8s both ease;
+	animation: rotateRoomBottomIn .8s both ease;
+}
+.room-bottom-leave-active {
+  -webkit-animation: rotateRoomBottomOut .8s both ease;
+    animation: rotateRoomBottomOut .8s both ease;
+}
+
+.room-bottom-enter-from,
+.room-bottom-leave-to {
+  -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+}
+
+.menu-popover-enter-from,
+.menu-popover-leave-to {
+  opacity: 0;
+  transform: rotateY(50deg);
+}
+.menu-popover-enter-to,
+.menu-popover-leave-from {
+  opacity: 1;
+  transform: rotateY(0deg);
+}
+.menu-popover-enter-active,
+.menu-popover-leave-active {
+  transition: opacity, transform 200ms ease-out;
+}
+
+
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
+
+@-webkit-keyframes rotateRoomLeftOut {
+    from {
+    }
+    to {
+        opacity: .3;
+        -webkit-transform: translateX(-100%) rotateY(90deg);
+    }
+}
+@keyframes rotateRoomLeftOut {
+    from {
+    }
+    to {
+        opacity: .3;
+        -webkit-transform: translateX(-100%) rotateY(90deg);
+        transform: translateX(-100%) rotateY(90deg);
+    }
+}
+
+@-webkit-keyframes rotateRoomLeftIn {
+    from {
+        opacity: .3;
+        -webkit-transform: translateX(100%) rotateY(-90deg);
+    }
+}
+@keyframes rotateRoomLeftIn {
+    from {
+        opacity: .3;
+        -webkit-transform: translateX(100%) rotateY(-90deg);
+        transform: translateX(100%) rotateY(-90deg);
+    }
+}
+
+@-webkit-keyframes rotateRoomRightOut {
+    from {
+    }
+    to {
+        opacity: .3;
+        -webkit-transform: translateX(100%) rotateY(-90deg);
+    }
+}
+@keyframes rotateRoomRightOut {
+    from {
+    }
+    to {
+        opacity: .3;
+        -webkit-transform: translateX(100%) rotateY(-90deg);
+        transform: translateX(100%) rotateY(-90deg);
+    }
+}
+
+@-webkit-keyframes rotateRoomRightIn {
+    from {
+        opacity: .3;
+        -webkit-transform: translateX(-100%) rotateY(90deg);
+    }
+}
+@keyframes rotateRoomRightIn {
+    from {
+        opacity: .3;
+        -webkit-transform: translateX(-100%) rotateY(90deg);
+        transform: translateX(-100%) rotateY(90deg);
+    }
+}
+
+@-webkit-keyframes rotateRoomTopOut {
+    from {
+    }
+    to {
+        opacity: .3;
+        -webkit-transform: translateY(-100%) rotateX(-90deg);
+    }
+}
+@keyframes rotateRoomTopOut {
+    from {
+    }
+    to {
+        opacity: .3;
+        -webkit-transform: translateY(-100%) rotateX(-90deg);
+        transform: translateY(-100%) rotateX(-90deg);
+    }
+}
+
+@-webkit-keyframes rotateRoomTopIn {
+    from {
+        opacity: .3;
+        -webkit-transform: translateY(100%) rotateX(90deg);
+    }
+}
+@keyframes rotateRoomTopIn {
+    from {
+        opacity: .3;
+        -webkit-transform: translateY(100%) rotateX(90deg);
+        transform: translateY(100%) rotateX(90deg);
+    }
+}
+
+@-webkit-keyframes rotateRoomBottomOut {
+    from {
+    }
+    to {
+        opacity: .3;
+        -webkit-transform: translateY(100%) rotateX(90deg);
+    }
+}
+@keyframes rotateRoomBottomOut {
+    from {
+    }
+    to {
+        opacity: .3;
+        -webkit-transform: translateY(100%) rotateX(90deg);
+        transform: translateY(100%) rotateX(90deg);
+    }
+}
+
+@-webkit-keyframes rotateRoomBottomIn {
+    from {
+        opacity: .3;
+        -webkit-transform: translateY(-100%) rotateX(-90deg);
+    }
+}
+@keyframes rotateRoomBottomIn {
+    from {
+        opacity: .3;
+        -webkit-transform: translateY(-100%) rotateX(-90deg);
+        transform: translateY(-100%) rotateX(-90deg);
+    }
+}
